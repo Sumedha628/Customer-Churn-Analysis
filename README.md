@@ -1,4 +1,4 @@
-# Telcom-Customer-Churn-Analysis
+# Telcom Customer Churn Analysis and Prediction
 ## Overview
 Customer churn is a major challenge in the telecommunications industry, as losing customers directly impacts revenue and increases acquisition costs. This project focuses on analyzing telecom customer data to identify churn patterns, understand customer behavior, and support data-driven retention strategies.
 
@@ -14,5 +14,12 @@ Customer churn results in significant revenue loss and increased customer acquis
 ## Dataset Details 
 The dataset contains --
 - 6,418 customer records (rows)
-- 32 features(columns)\
-   Describing customer demographics, account information, subscribed services, billing details and churn status.
+- **32 features** (columns) - Describing customer demographics, account information, subscribed services, billing details and churn status.
+
+tools used 
+
+what is done in each tool 
+
+what are the results 
+
+future insights/ strategies 
