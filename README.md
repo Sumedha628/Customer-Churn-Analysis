@@ -1,18 +1,17 @@
 # Telecom Customer Churn Analysis and Prediction
-
+ 
 ## 📌 Overview
 Customer churn is a major challenge in the telecommunications industry, where losing customers directly impacts revenue and increases acquisition costs. This project analyzes telecom customer data to identify churn patterns, understand behavioral drivers, and build a predictive model to flag at-risk customers before they leave — supporting data-driven retention strategies.
-
+ 
 ## ❓ Problem Statement
 Customer churn results in significant revenue loss and increased customer acquisition costs. Businesses need a systematic way to analyze customer data, identify high-risk segments, understand the factors contributing to churn, and forecast future attrition so retention efforts can be targeted proactively rather than reactively.
-
+ 
 ## 🎯 Objectives
-- Analyze customer demographics, geography, account details and service usage
+- Analyze customer demographics, geography, account details, and service usage
 - Identify key churn drivers through exploratory analysis
 - Build a reproducible data pipeline from raw data to cleaned, model-ready data
 - Train and evaluate a predictive model, tuned deliberately for business relevance
 - Visualize churn trends and predictions in an interactive dashboard
-
 ## 🗂️ Dataset
 - 6,418 customer records
 - 32 features covering demographics, account details, subscribed services, and billing
@@ -59,12 +58,10 @@ Customer churn results in significant revenue loss and increased customer acquis
 - The model was trained on a snapshot of historical data; churn drivers may shift over time and the model would benefit from periodic retraining.
 - Threshold selection (0.35) reflects a business assumption that recall matters more than precision in this context — a different business priority would warrant a different threshold.
 - Random Forest's `class_weight='balanced'` had limited effect on recall in practice; threshold tuning was the more effective lever here, which is a useful finding for similar imbalanced classification problems.
-
-
 ## 📁 Project Structure
 ```
 ├── churn_analysis.sql          # SQL data quality checks, cleaning, and view creation
-├── Telecom_data.ipynb          # Full pipeline: SQLite setup, encoding, modeling, evaluation, prediction
+├── Telecom_Churn_Analysis.ipynb # Full pipeline: SQLite setup, encoding, modeling, evaluation, prediction
 ├── Customer_Data.csv           # Raw dataset
 ├── Dashboard/                  # Power BI dashboard files and screenshots
 └── README.md
@@ -72,3 +69,4 @@ Customer churn results in significant revenue loss and increased customer acquis
  
 ## 🧩 Notes on Tooling
 The SQL scripts in this repo were originally written and prototyped in SQL Server (T-SQL syntax). For full reproducibility — so anyone can clone this repo and run the complete pipeline without needing a SQL Server instance — the queries were adapted to SQLite syntax (e.g., `ISNULL` → `COALESCE`) and executed directly within the Python notebook using a local, file-based SQLite database.
+ 
