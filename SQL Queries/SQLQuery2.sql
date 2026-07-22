@@ -1,1 +1,0 @@
-select * from churn_data
