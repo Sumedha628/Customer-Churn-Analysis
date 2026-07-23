@@ -42,6 +42,14 @@ Customer churn results in significant revenue loss and increased customer acquis
  
 **Prediction output:** 393 of 411 "Joined" customers flagged as high churn risk, each with an individual churn probability score for prioritization.
  
+## 🖥️ Dashboard
+ 
+**Summary View**
+![Summary Dashboard](Dashboard/Summary_Dashboard.png)
+ 
+**Prediction View**
+![Predictions Dashboard](Dashboard/Predictions_Dashboard.png)
+ 
 ## 💡 Key Insights
 - **Contract type is the strongest predictor** — Month-to-Month customers churn far more than One/Two Year contract holders.
 - **Early tenure is high-risk** — churn is concentrated in the first 0–24 months, then drops sharply.
@@ -63,10 +71,9 @@ Customer churn results in significant revenue loss and increased customer acquis
 ├── churn_analysis.sql          # SQL data quality checks, cleaning, and view creation
 ├── Telecom_Churn_Analysis.ipynb # Full pipeline: SQLite setup, encoding, modeling, evaluation, prediction
 ├── Customer_Data.csv           # Raw dataset
-├── Dashboard/                  # Power BI dashboard files and screenshots
+├── Dashboard/                   # Power BI dashboard files and screenshots
 └── README.md
 ```
  
 ## 🧩 Notes on Tooling
 The SQL scripts in this repo were originally written and prototyped in SQL Server (T-SQL syntax). For full reproducibility — so anyone can clone this repo and run the complete pipeline without needing a SQL Server instance — the queries were adapted to SQLite syntax (e.g., `ISNULL` → `COALESCE`) and executed directly within the Python notebook using a local, file-based SQLite database.
- 
