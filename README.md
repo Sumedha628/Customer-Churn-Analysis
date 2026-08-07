@@ -77,3 +77,9 @@ Customer churn results in significant revenue loss and increased customer acquis
  
 ## 🧩 Notes on Tooling
 The SQL scripts in this repo were originally written and prototyped in SQL Server (T-SQL syntax). For full reproducibility — so anyone can clone this repo and run the complete pipeline without needing a SQL Server instance — the queries were adapted to SQLite syntax (e.g., `ISNULL` → `COALESCE`) and executed directly within the Python notebook using a local, file-based SQLite database.
+
+## 👩‍💻 Author
+
+**Sumedha**
+[LinkedIn](https://linkedin.com/in/sumedhakulkarni628) · [GitHub](https://github.com/Sumedha628)
+
