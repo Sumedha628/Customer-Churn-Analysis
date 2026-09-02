@@ -10,7 +10,7 @@ Customer churn results in significant revenue loss and increased customer acquis
 - Analyze customer demographics, geography, account details, and service usage
 - Identify key churn drivers through exploratory analysis
 - Build a reproducible data pipeline from raw data to cleaned, model-ready data
-- Train and evaluate a predictive model, tuned deliberately for business relevance
+- Train and evaluate a predictive model, tuned deliberately for business relevance.
 - Visualize churn trends and predictions in an interactive dashboard.
 ## 🗂️ Dataset
 - 6,418 customer records
